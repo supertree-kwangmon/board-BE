@@ -1,0 +1,31 @@
+{
+  "name": "board-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server:local": "nodemon --exec babel-node src/index.js --delay 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supertree-kwangmon/board-BE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supertree-kwangmon/board-BE/issues"
+  },
+  "homepage": "https://github.com/supertree-kwangmon/board-BE#readme",
+  "dependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/node": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "helmet": "^6.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
