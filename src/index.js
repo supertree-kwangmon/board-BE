@@ -6,6 +6,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 
 import helloRouter from "./routes/hello";
+import UserRouter from "./routes/user";
 
 require("dotenv").config();
 
@@ -39,6 +40,8 @@ app.use("/", helloRouter);
 
 // MVC => Model, View, Controller
 // Model, Router, Controller
+
+app.use("/user", UserRouter);
 
 const PORT = 4000; // 서버 포트 지정
 
