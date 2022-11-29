@@ -7,6 +7,7 @@ import mongoose from "mongoose";
 
 import helloRouter from "./routes/hello";
 import UserRouter from "./routes/user";
+import BoardRouter from "./routes/board";
 
 require("dotenv").config();
 
@@ -42,6 +43,7 @@ app.use("/", helloRouter);
 // Model, Router, Controller
 
 app.use("/user", UserRouter);
+app.use("/board", BoardRouter);
 
 const PORT = 4000; // 서버 포트 지정
 
