@@ -15,4 +15,4 @@ const boardSchema = new Schema({
   create_at: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model("boards", userSchema);
+module.exports = mongoose.model("boards", boardSchema);
